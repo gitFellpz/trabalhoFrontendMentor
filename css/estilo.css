@@ -1,6 +1,69 @@
 @import url(./reset.css);
 @import url(./variaveis.css);
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    font-family: var(--fonte);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo{
+    background-color: var(--azul__escuro1);
+    position: relative;
+    width: 400px;
+    border-radius: 30px;
+}
+
+.box-1, .box-2{
+    padding: 30px;
+    padding-top: 40px;
+}
+
+.box-2{
+    display: none;
+}
+
+.box__img{
+    background-color: var(--azul__escuro2);
+    background-image: url(../images/icon-star.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px 21px;
+    border-radius: 25px;
+}
+
+.titulo{
+    margin-top: 30px;
+    font-size: 1.7em;
+    color: var(--branco);
+    font-weight: 700;
+}
+
+.texto{
+    color: var(--cinza__medio);
+    margin: 20px 0;
+}
+
+.box__radios{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.enviar{
+    background-color: var(--laranja);
+    border: none;
+    width: 100%;
+    color: var(--branco);
+    padding: 13px;
+    font-family: var(--fonte);
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 25px;
+}

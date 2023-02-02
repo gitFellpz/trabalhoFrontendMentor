@@ -13,32 +13,74 @@
 
   </head>
   <body>
+    <main class="conteudo">
+      <form method="get" class="box-1">
+        <picture class="box__img"></picture>
 
-    How did we do?
+        <h2 class="titulo">How did we do?</h2>
 
-    Please let us know how we did with your support request. All feedback is appreciated 
-    to help us improve our offering!
+        <p class="texto">
+          Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+        </p>
 
-    1 2 3 4 5
+        <div class="box__radios">
+          <div class="radio">
+            <label>
+              <input name="selecao" type="radio" placeholder="1">
+              <span>1</span>
+            </label>
+          </div>
 
-    Submit
+          <div class="radio">
+            <label>
+              <input name="selecao" type="radio" placeholder="1">
+              <span>2</span>
+            </label>
+          </div>
 
-    <!-- Thank you state start -->
+          <div class="radio">
+            <label>
+              <input name="selecao" type="radio" placeholder="1">
+              <span>3</span>
+            </label>
+          </div>
 
-    You selected <!-- Add rating here --> out of 5
+          <div class="radio">
+            <label>
+              <input name="selecao" type="radio" placeholder="1">
+              <span>4</span>
+            </label>
+          </div>
 
-    Thank you!
+          <div class="radio">
+            <label>
+              <input name="selecao" type="radio" placeholder="1">
+              <span>5</span>
+            </label>
+          </div>
+        </div>
 
-    We appreciate you taking the time to give a rating. If you ever need more support, 
-    don’t hesitate to get in touch!
+        <input class="enviar" type="submit" value="SUBMIT">
+      </form>
 
-    <!-- Thank you state end -->
+      <div class="box-2">
+        <img src="./images/illustration-thank-you.svg" alt="Imgagem de celular e um cartão">
 
+        <p class="informar__selecao">You selected <span id="valor__selecionado"></span> out of 5</p>
+
+        <h2 class="titulo">Thank you!</h2>
+
+        <p class="texto">
+          We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+    </main>
     
-    <div class="attribution">
+    <!-- <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </div> -->
+
     <script src="./js/script.js"></script>
   </body>
 </html>

@@ -1,12 +1,11 @@
 :root{
-    --branco: hsl(0, 0%, 100%);
-    --verde__claro: hsl(217, 12%, 63%);
-    --cinza__medio: hsl(216, 12%, 54%);
-    --azul__escuro1: hsl(213, 19%, 18%);
-    --azul__escuro2: hsl(216, 12%, 8%);
-    --laranja: hsl(25, 97%, 53%);
+    --branco: rgb(255, 255, 255);
+    --verde__claro: rgb(149, 158, 172);
+    --cinza__medio: rgb(124, 135, 152);
+    --azul__escuro1: #252d37;
+    --azul__escuro2: #121417;
+    --laranja: rgb(251, 116, 19);
     --fonte: 'Overpass', sans-serif;
-    --tamanho__fonte: 15px;
     --Mobile: 375px;
     --Desktop: 1440px;
 }

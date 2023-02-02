@@ -6,7 +6,7 @@
 
 body{
     height: 100vh;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--azul__escuro2);
     font-family: var(--fonte);
     display: flex;
     justify-content: center;
@@ -14,7 +14,9 @@ body{
 }
 
 .conteudo{
-    background-color: var(--azul__escuro1);
+    background: rgb(18,20,23);
+    background: radial-gradient(circle, rgba(18,20,23,1) 23%, rgba(37,45,55,1) 93%);
+    background-color: antiquewhite;
     position: relative;
     width: 400px;
     border-radius: 30px;
@@ -24,13 +26,12 @@ body{
     padding: 30px;
     padding-top: 40px;
 }
-
 .box-2{
     display: none;
 }
 
 .box__img{
-    background-color: var(--azul__escuro2);
+    background-color: var(--azul__escuro3);
     background-image: url(../images/icon-star.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -44,16 +45,69 @@ body{
     color: var(--branco);
     font-weight: 700;
 }
-
 .texto{
     color: var(--cinza__medio);
     margin: 20px 0;
 }
 
+
 .box__radios{
     display: flex;
     justify-content: center;
     gap: 10px;
+}
+.box__radios::after{
+    content: "";
+    clear: both;
+}
+/* Estudando um pouco como funciona o radio e sua customização */
+.radio{
+    height: 50px;
+    width: 80px;
+    position: relative;
+}
+.radio + .radio{
+    margin-left: 10px;
+}
+.radio label{
+    background: #2b3138 no-repeat center center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    transition: 0.3s ease-out;
+}
+.radio label:hover{
+    background-color: var(--cinza__claro);
+    border-radius: 30px;
+}
+.radio label:hover span{
+    color: var(--branco);
+}
+.radio label span{
+    z-index: 1;
+    color: var(--cinza__medio);
+}
+.radio label input[type=radio]{
+    /* Herdar estilos do label */
+    all: unset;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+}
+.radio label input[type=radio]:checked{
+    background-color: var(--laranja);
+    transition: 0.5s ease-out;
+}
+.radio label input[type=radio]:checked + span{
+    color: white;
 }
 
 .enviar{
@@ -66,4 +120,10 @@ body{
     margin-top: 20px;
     cursor: pointer;
     border-radius: 25px;
+    transition: 0.3s ease-out;
+    letter-spacing: 3px;
+}
+.enviar:hover{
+    background-color: var(--branco);
+    color: var(--laranja);
 }

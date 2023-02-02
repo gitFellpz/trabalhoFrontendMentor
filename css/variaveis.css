@@ -1,9 +1,10 @@
 :root{
     --branco: rgb(255, 255, 255);
-    --verde__claro: rgb(149, 158, 172);
+    --cinza__claro: rgb(149, 158, 172);
     --cinza__medio: rgb(124, 135, 152);
     --azul__escuro1: #252d37;
     --azul__escuro2: #121417;
+    --azul__escuro3: #2b3138;
     --laranja: rgb(251, 116, 19);
     --fonte: 'Overpass', sans-serif;
     --Mobile: 375px;

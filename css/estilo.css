@@ -27,7 +27,7 @@ body{
     padding-top: 40px;
     display: none;
 }
-.box-2.ativado, .box-1.ativado{
+.box-1.ativado, .box-2.ativado{
     display: block;
 }
 
